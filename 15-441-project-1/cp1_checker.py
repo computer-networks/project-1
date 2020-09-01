@@ -40,7 +40,7 @@ BAD_REQUESTS = [
     'GET / HTTP/1.1\rUser-Agent: 441UserAgent/1.0.0\r\n\r\n',     # Missing LF
 ]
 
-BAD_REQUEST_RESPONSE = 'HTTP/1.1 400 Bad Request\r\n'
+BAD_REQUEST_RESPONSE = 'HTTP/1.1 400 Bad Request\r\n\r\n'
 
 for i in xrange(numTrials):
     socketSubset = []
