@@ -214,8 +214,8 @@ request_header: token ows t_colon ows text ows t_crlf {
 
 /*
  * You need to fill this rule, and you are done! You have all the assembly
- * needed. You may wish to define your own rules. Please read RFC 2616
- * and the annotated excerpted text on the course website. All the best!
+ * needed. You may wish to define your own rules. Please read RFC 2616.
+ * All the best!
  *
  */
 request: request_line request_header t_crlf{
