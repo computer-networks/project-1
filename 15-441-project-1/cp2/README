@@ -1,0 +1,4 @@
+dumper.py - Point a web browser to this Python web server and observe requests
+Static Site - Demo static website to serve with Liso
+Liso Prototype - Python web server demoing what requests from Liso should look like; not a full solution
+lowlevelhttptests.py - some python code to help test simple GET and HEAD requests. Feel free to expand it
