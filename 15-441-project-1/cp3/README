@@ -1,0 +1,5 @@
+CGI Example Code - C server-side example, Python client examples; note: it doesn't show sending of content via stdin etc.
+SSL Example Code - C server example, Python client example; note: you need to do way more SSL error handling
+Daemonizing C Code - helper daemonizing code
+gen_cert.sh        - Script to create self signed certificate. You will need to take the certificate and add it to your trusted certificates to use the web browser to view your server. If you are using the pythons request library, you will need to mention the certificate in the veririation argument of the requests call.
+Python SSL Prototype - Python web server demoing SSL socket wrapping in Python

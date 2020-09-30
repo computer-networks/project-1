@@ -1,0 +1,69 @@
+################################################################################
+# README                                                                       #
+#                                                                              #
+# Description: This file serves as a README and documentation for the example  #
+#              15-441 SSL echo server and Python demo client.                  #
+#                                                                              #
+# Authors: Athula Balachandran <abalacha@cs.cmu.edu>,                          #
+#          Charles Rang <rang972@gmail.com>,                                   #
+#          Wolf Richter <wolf@cs.cmu.edu>                                      #
+#                                                                              #
+################################################################################
+
+
+
+
+[TOC-1] Table of Contents
+--------------------------------------------------------------------------------
+
+        [TOC-1] Table of Contents
+        [DES-2] Description of Files
+        [RUN-3] How to Run
+
+
+
+
+[DES-2] Description of Files
+--------------------------------------------------------------------------------
+
+Here is a listing of all files associated with Recitation 4 and what their
+purpose is:
+
+                    .../README                     - Current document 
+                    .../Makefile                   - for make convenience;
+                                                     builds an ssl executable
+                    .../ssl_example.c              - Example server source code
+
+
+***** NOTE: The server code is not feature complete, doesn't use select etc.
+            It is meant more to demonstrate proper SSL function use.
+
+            You will need to:
+
+                (1) Make SSL fd sockets non-blocking
+                (2) Check SSL errors (SSL_get_error() etc.) especially for
+                    non-block early read/write returns
+                (3) Integrate these fd's and SSL_read and SSL_write into your
+                    select() loop
+
+
+
+
+[RUN-3] How to Run
+--------------------------------------------------------------------------------
+
+Do this in one console to run the echo SSL server:
+
+                    make
+                    ./ssl
+
+and for the client test (hard coding in localhost):
+
+                    ./ssl_client.py
+
+It will show you information about the server's certificate.  Note you will
+need to edit paths in both source files to properly locate and use the CA
+certificate, your certificate, and your private key.
+
+In addition it should demonstrate sending and recieving exactly the same bytes
+via two separate, though sequential, connections.
