@@ -70,7 +70,7 @@ for i in xrange(numTrials):
             if time.time() - start_time > RECV_TOTAL_TIMEOUT:
                 break
         if data != randomData[j]:
-            sys.stderr.write("Error: Data received is not the same as sent! \n")
+            sys.stderr.write("Error: Data received is unexpected! \n")
             sys.exit(1)
 
 for i in xrange(numConnections):

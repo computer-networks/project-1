@@ -27,20 +27,21 @@
 Here is a listing of all files associated with checkpoint 1 and what their'
 purpose is:
 
-                    .../README              - Current document 
-                    .../echo_client.c       - Simple echo network client
-                    .../echo_server.c       - Simple echo network server
-                    .../Makefile            - Contains rules for make
-                    .../cp1_checker.py      - Simple python test script
+                    ./README                    - Current document 
 
-                    .../example.c           - Example driver for parsing
-                    .../lexer.l             - Lex/Yacc related logic           
-                    .../parse.y
-                    .../parse.c
-                    .../parse.h
+                    ../Makefile                 - Contains rules for make
+                    ../src/echo_client.c        - Simple echo network client
+                    ../src/echo_server.c        - Simple echo network server
+                    ../src/example.c            - Example driver for parsing
 
-                    .../sample_request_simple    - Example HTTP requests
-                    .../sample_request_realistic
+                    ../src/lexer.l              - Lex/Yacc related logic           
+                    ../src/parser.y
+                    ../src/parse.c
+                    ../include/parse.h
+
+                    ./cp1_checker.py            - Simple python test script
+                    ./sample_request_simple     - Example HTTP requests
+                    ./sample_request_realistic
 
 
 [RUN-3] How to Run
