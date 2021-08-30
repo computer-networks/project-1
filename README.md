@@ -20,7 +20,7 @@ This repository contains the starter code for ***CMU 15-441/641 Networking and t
 
 ## 2. Environment Setup
 1. Install docker: https://www.docker.com
-2. Open a terminal and navigate to this directory.
+2. Open a terminal and navigate to the directory containing this `README.md` file.
 3. Build the docker image: `docker build -t 15-441/641-project-1:latest -f ./DockerFile .`
 4. Run the docker container: ``docker run -it -v `pwd`:/home/project-1/ --name <name for your container> 15-441/641-project-1 /bin/bash``
 5. The starter code for the project is available at `/home/project-1/` in the container and `.` on your local machine. To make development easier, a mapping is established between these two folders. Modiying the code in one location will also effect the other one. This means that you can use an IDE to write code on your local machine and then seamlessly test it in the container.
