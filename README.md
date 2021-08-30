@@ -8,12 +8,12 @@
 - `cp2`: CP2 scripts and examples.
 - `cp3`: CP3 scripts and examples.
 - `src/`: Source code for the project.
-- `src/echo_client.c`: Simple echo network client.
-- `src/echo_server.c`: Simple echo network server
-- `src/example.c`: Example driver for parsing.
-- `src/lexer.l`: Lex/Yacc related logic.
-- `src/parser.y`
-- `src/parse.c`
+    - `src/echo_client.c`: Simple echo network client.
+    - `src/echo_server.c`: Simple echo network server
+    - `src/example.c`: Example driver for parsing.
+    - `src/lexer.l`: Lex/Yacc related logic.
+    - `src/parser.y`
+    - `src/parse.c`
 - `include/parse.h`
 
 ## 2. Environment Setup
