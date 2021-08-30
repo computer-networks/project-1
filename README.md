@@ -1,16 +1,14 @@
-# Project-1-Handout-Gradescope
+# liso-starter-code
 
 ## 1. Files
-- `15-441-project-1/` : source codes for the handout
-- `DockerFile` : the script to build the docker image for this project's environment
+- `15-441-project-1/`: Source code for the project.
+- `DockerFile`: Script to build the docker image for the project's environment.
 
 ## 2. Environment Setup
-1. install docker
-2. open terminal and change working directory to this folder
-3. run ``export DOCKER_DIR=`pwd`  ``
-3. run `docker build -t 15441project1:latest -f ./DockerFile .`
-4. run `docker run -it -v $DOCKER_DIR/15-441-project-1/:/home/15-441-project-1/ --name <name_for_your_container> 15441project1 /bin/bash`
-5. handout codes are available at `/home/15-441-project-1/` (in the container) and `<absolute_path_to_current_folder>/15-441-project-1/` (on your machine), and modify in one place will also affect the other one. That is to say, a mapping is established between the two folders, which means you can use IDE to write codes on your machine and test them in the container easily.
-
-6. In order to test your server with a browser on your machine, you need to set up port mapping for the docker container. Simply add a command line argument, such as, `-p 8888:15441` to the command in 4, and a mapping from `127.0.0.1:15441`(in container) to `127.0.0.1:8888`(on your machine) is established. Then you can use the URL `127.0.0.1:8888` in your browser like Chrome to test your server which is bound to port 15441 in the container.
-
+1. Install docker: https://www.docker.com
+2. Open a terminal and navigate to this directory.
+3. Run ``export DOCKER_DIR=`pwd`
+4. Build the docker image: `docker build -t 15441project1:latest -f ./DockerFile .`
+5. Run the docker container: `docker run -it -v $DOCKER_DIR/15-441-project-1/:/home/15-441-project-1/ --name <name_for_your_container> 15441project1 /bin/bash`
+6. The starter code for the project is available at `/home/15-441-project-1/` in the container and `./15-441-project-1/` on your local machine. To make development easier, a mapping is established between these two folders. Modiying the code in one location will also effect the other one. This means that you can use an IDE to write code on your local machine and then seamlessly test it in the container. 
+7. To test your server using a web browser, you need to configure port mapping for the docker container. Simply add the argument `-p 8888:15441` to the `docker run` command to establish a mapping from `127.0.0.1:15441` in the container to `127.0.0.1:8888` on your local machine. Then you can test your server by using a web browser (e.g., Chrome) on your local machine to navigate to the URL `127.0.0.1:8888`.
