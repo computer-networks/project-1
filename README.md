@@ -1,5 +1,7 @@
 # 15-441-p1
 
+This repository contains the starter code for ***CMU 15-441/641 Networking and the Internet Project 1: A Web Server Called Liso***.
+
 ## 1. Files
 - `DockerFile`: Script to build the docker image for the project's environment.
 - `Makefile`: Contains rules for `make`.
