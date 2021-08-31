@@ -24,7 +24,7 @@
 [DES-2] Description of Files
 --------------------------------------------------------------------------------
 
-Here is a listing of all files associated with checkpoint 1 and what their'
+Here is a listing of all files associated with checkpoint 1 and what their
 purpose is:
 
                     ./README                    - Current document 
@@ -36,7 +36,6 @@ purpose is:
 [RUN-3] How to Run
 --------------------------------------------------------------------------------
 
-Note: We recommend building and testing on Andrew machines. 
 
 i) Starter echo server
 
@@ -66,7 +65,7 @@ iii) Test script
 
 After you have done your checkpoint 1 implementations (select and HTTP parsing),
 you could use provided test script to test your implementations. The provided 
-test script is a subset of the tests we will use eventually on Autolab.
+test script is a subset of the tests we will use eventually.
 
 The test Python script takes a series of arguments and can be run as:
 
